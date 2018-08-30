@@ -8,13 +8,13 @@ import (
 	"path"
 	"strconv"
 
+	"github.com/dmp42/resumable"
 	storagedriver "github.com/docker/distribution/registry/storage/driver"
 	"github.com/sirupsen/logrus"
-	"github.com/stevvooe/resumable"
 
 	// register resumable hashes with import
-	_ "github.com/stevvooe/resumable/sha256"
-	_ "github.com/stevvooe/resumable/sha512"
+	_ "github.com/dmp42/resumable/sha256"
+	_ "github.com/dmp42/resumable/sha512"
 )
 
 // resumeDigest attempts to restore the state of the internal hash function
